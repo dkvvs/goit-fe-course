@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.page_header {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.site-navigation {
+  padding-top: 72px;
+  padding-bottom: 98px;
+  list-style: none;
+  text-align: center;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 124px;
+}
+
+.site-navigation a {
+  color: #626262;
+  text-decoration: none;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #03a9f4;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.news-list-item {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 136px;
+}
+
+.news-list-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.news-list-item:nth-child(5) {
+  margin-bottom: 52px;
+}
+
+.news-list-item:nth-child(6) {
+  margin-bottom: 52px;
+}
+
+.news-list-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.news-list-category {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.news-list-headline {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.news-list-content {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.container {
+  text-align: center;
+  width: 900px;
+  height: 130px;
+}
+
+.load-more {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  width: 164px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
