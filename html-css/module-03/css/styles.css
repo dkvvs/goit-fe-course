@@ -70,11 +70,7 @@ body {
   margin-right: 0px;
 }
 
-.news-list-item:nth-child(5) {
-  margin-bottom: 52px;
-}
-
-.news-list-item:nth-child(6) {
+.news-list-item:nth-last-child(-n + 2) {
   margin-bottom: 52px;
 }
 
@@ -86,6 +82,7 @@ body {
 .news-list-category {
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
+  color: #b4ad9e;
   margin-top: 0;
   margin-bottom: 28px;
   line-height: 17px;
@@ -113,8 +110,12 @@ body {
   display: inline-block;
   font-size: 20px;
   line-height: 24px;
-  width: 164px;
-  height: 60px;
+  border-width: 1px;
+  background-color: #ddddd7;
+  border-color: #626262;
+  border-style: solid;
+  width: 162px;
+  height: 58px;
   cursor: pointer;
 }
 
