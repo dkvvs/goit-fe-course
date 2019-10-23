@@ -15,11 +15,7 @@ body {
   line-height: 24px;
 }
 
-.wrapper {
-  width: 900px;
-  margin: 0 auto;
-}
-
+.container,
 .page_header {
   width: 900px;
   margin: 0 auto;
@@ -100,10 +96,9 @@ body {
   line-height: 24px;
 }
 
-.container {
-  text-align: center;
-  width: 900px;
+div {
   height: 130px;
+  text-align: center;
 }
 
 .load-more {
@@ -113,12 +108,12 @@ body {
   line-height: 24px;
   color: #626262;
   border-width: 1px;
-  background-color: #ddddd7;
   border-color: #626262;
   border-style: solid;
   width: 162px;
   height: 58px;
   cursor: pointer;
+  text-align: center;
 }
 
 .visually-hidden:not(:focus):not(:active),
