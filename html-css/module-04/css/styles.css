@@ -41,6 +41,11 @@
   float: right;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
 .site-navigation li {
   float: left;
   /* width: 418px; */
@@ -74,6 +79,15 @@
   .featured_list:hover .featured-list-price {
     background-color: #1abc9c;
   }
+
+.featured-list-headline a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.featured_list a {
+  
+}
 
 h2::after {
   display: block;
