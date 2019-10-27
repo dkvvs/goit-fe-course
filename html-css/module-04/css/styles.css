@@ -97,12 +97,12 @@ input[type="radio"].visually-hidden {
   background-color: #e9f0fd;
 }
 
-.featured_list:hover .featured-list-headline {
+.featured_list:hover .featured-list-bottom {
   background-color: #1abc9c;
 }
 
 .featured_list:hover .featured-list-price {
-  background-color: #1abc9c;
+  background-color: rgba(255, 255, 255, 0.44);
 }
 
 .featured-list-headline a {
@@ -113,9 +113,9 @@ input[type="radio"].visually-hidden {
 
 .featured-list-headline {
   float: left;
-  background-color: #323232;
   color: #ffffff;
   width: 201px;
+  height: 40px;
   font-size: 18px;
   line-height: 32px;
   padding-top: 4px;
@@ -128,10 +128,10 @@ input[type="radio"].visually-hidden {
 
 .featured-list-price {
   float: left;
-  background-color: #323232;
+  background-color: rgba(255, 255, 255, 0.44);
   color: #ffffff;
-  opacity: 0.44;
   width: 54px;
+  height: 40px;
   font-size: 18px;
   line-height: 32px;
   padding-top: 4px;
@@ -140,6 +140,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-family: "Roboto";
   font-weight: 900;
+}
+
+.featured-list-bottom {
+  background-color: #323232;
+  width: 255px;
+  height: 40px;
 }
 
 .featured-products {
