@@ -57,6 +57,10 @@ input[type="radio"].visually-hidden {
   color: #1abc9c;
 }
 
+.navigation {
+  float: right;
+}
+
 .site-navigation {
   display: block;
   float: right;
@@ -115,7 +119,6 @@ input[type="radio"].visually-hidden {
   float: left;
   color: #ffffff;
   width: 201px;
-  height: 40px;
   font-size: 18px;
   line-height: 32px;
   padding-top: 4px;
@@ -131,7 +134,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.44);
   color: #ffffff;
   width: 54px;
-  height: 40px;
   font-size: 18px;
   line-height: 32px;
   padding-top: 4px;
@@ -145,7 +147,6 @@ input[type="radio"].visually-hidden {
 .featured-list-bottom {
   background-color: #323232;
   width: 255px;
-  height: 40px;
 }
 
 .featured-products {
@@ -166,8 +167,7 @@ input[type="radio"].visually-hidden {
   height: 7px;
   background-color: #1abc9c;
   content: "";
-  margin: 0 auto;
-  margin-top: 32px;
+  margin: 32px auto 0;
 }
 
 .featured-list-bottom {
@@ -175,6 +175,7 @@ input[type="radio"].visually-hidden {
 }
 
 .featured_list {
+  width: 255px;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -206,8 +207,7 @@ input[type="radio"].visually-hidden {
   height: 7px;
   background-color: #4ec6ab;
   content: "";
-  margin: 0 auto;
-  margin-top: 32px;
+  margin: 32px auto 0;
 }
 
 .latest-news-headline::after {
@@ -255,18 +255,15 @@ input[type="radio"].visually-hidden {
 }
 
 .read-more {
+  display: block;
   padding-top: 13px;
   width: 159px;
   height: 51px;
-  border: 0;
   border-radius: 3px;
   background-color: #4ec6ab;
   text-align: center;
   cursor: pointer;
   margin-bottom: 82px;
-}
-
-.read-more a {
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
