@@ -282,9 +282,9 @@ transition: opacity 200ms linear;
 	top: 0;    
 	left: 0;   
 	/* background: transparent; */
-	background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: linear-gradient( 90deg, #fce38a 0%, #f38181 100%);
+	background-image: -moz-linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  background-image: linear-gradient( 0deg, #fce38a 0%, #f38181 100%);
   /* background-image: linear-gradient(0deg, #f0e290 0%, #e98a89 100%); */
   opacity: 0;
   transform: translate(-10px, -10px);
