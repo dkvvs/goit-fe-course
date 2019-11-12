@@ -148,7 +148,7 @@ transition: opacity 0.2s linear;
 }
 
 .sevices-item-name {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .team-item-descr,
@@ -181,7 +181,7 @@ transition: opacity 0.2s linear;
 .sevices-item {
   display: flex;
   justify-content: flex-start;
-  width: 380px;
+  width: 360px;
   margin-bottom: 100px;
 }
 
@@ -197,7 +197,7 @@ transition: opacity 0.2s linear;
 }
 
 .amazing-services-content {
-  margin-left: 28px;
+  padding-left: 28px;
   width: 290px;
 }
 
@@ -290,9 +290,6 @@ transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
-.icon-facebook {
-}
-
 .icon-facebook:hover,
 .icon-twitter:hover,
 .icon-pinterest:hover,
@@ -356,12 +353,6 @@ transition: opacity 0.2s linear;
 
 /* Footer */
 
-.framing-footer {
-  width: 1200px;
-  height: 10px;
-  background-color: rgb(12, 10, 10);
-}
-
 .footer {
   border-top: 1px solid #e5e5e5;
   display: flex;
@@ -369,7 +360,7 @@ transition: opacity 0.2s linear;
   align-items: center;
 }
 
-.page-footer {
+.footer-content {
   font-size: 14px;
   line-height: 62px;
   color: #333333;
@@ -377,7 +368,7 @@ transition: opacity 0.2s linear;
   font-weight: 400;
 }
 
-.page-footer a {
+.footer-content a {
   color: #f38181;
   text-decoration: none;
 }
@@ -387,18 +378,20 @@ transition: opacity 0.2s linear;
 }
 
 .email {
-  width: 228px;
+  width: 230px;
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
+}
+
+::placeholder {
   padding: 0 12px;
   font-size: 15px;
   line-height: 40px;
-  color: #cccccc;
   font-family: "Roboto";
   font-weight: 300;
-  text-align: left;
   font-style: italic;
-  padding: 0 12px;
+  text-align: left;
+  color: #cccccc;
 }
 
 .subscribe {
@@ -407,10 +400,10 @@ transition: opacity 0.2s linear;
   font-size: 14px;
   line-height: 40px;
   color: #ffffff;
+  border: none;
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  border: none;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
