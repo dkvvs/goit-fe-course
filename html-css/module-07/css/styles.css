@@ -44,15 +44,6 @@ input[type="radio"].visually-hidden {
        url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff');
 }
 
-/* @font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Serif'), local('NotoSerif'),
-       url('../fonts/noto-serif-v8-latin-regular.woff2') format('woff2'),
-       url('../fonts/noto-serif-v8-latin-regular.woff') format('woff');
-} */
-
 @font-face {
   font-family: 'Noto Serif';
   font-style: italic;
@@ -276,13 +267,13 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-textarea:required:invalid,
-input:required:invalid {
+textarea:required:invalid:focus,
+input:required:invalid:focus {
   outline: 2px solid #ff0000;
 }
 
-textarea:required:valid,
-input:required:valid {
+textarea:required:valid:focus,
+input:required:valid:focus {
   outline: 2px solid #00ff00;
 }
 
