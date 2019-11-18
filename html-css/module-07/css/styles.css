@@ -276,9 +276,14 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-textarea:required:invalid:focus,
-input:required:invalid:focus {
-  outline: 1px solid #ff0000;
+textarea:required:invalid,
+input:required:invalid {
+  outline: 2px solid #ff0000;
+}
+
+textarea:required:valid,
+input:required:valid {
+  outline: 2px solid #00ff00;
 }
 
 .blok-input input {
