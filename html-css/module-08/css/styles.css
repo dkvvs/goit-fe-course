@@ -1,0 +1,340 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+.page-header {
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+.background-dreams {
+  min-width: 320px;
+  height: 540px;
+  background-color: #1a1915;
+  background-image: url(../img/Vector_Smart_Object.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 68px;
+}
+
+.logo {
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-navigation {
+  display: flex;
+  width: 180px;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto 116px;
+}
+
+.site-navigation a:hover {
+  border-color: #ffffff;
+}
+
+.site-navigation a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;  
+  width: 90px;
+  height: 36px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 18px;
+  text-align: center;
+}
+
+/* Headline h1 */
+
+.headline {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.hadline-descr {
+  padding: 0 35px 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+/* Button find your holiday partner */
+
+.find-partner {
+  display: block;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  border: none;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* Headline h2 */
+
+.headline-meet {
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Headline h3 */
+
+.name-partner {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.partner-descr {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Meet a partner */
+
+.meet-partner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.meet-partner-item {
+  width: 235px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.meet-partner-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.partner-foto {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+/* Pseudo-element cards */
+
+.foto {
+  border-radius: 50%;
+}
+
+.partner-tv,
+.partner-nature,
+.partner-cats,
+.partner-teleg {
+  display: inline-block;
+  position: relative;
+}
+
+.icon-item::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #ffffff;
+  background-position: center;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.partner-tv::after {
+  background-image: url(../img/icon_tv.png);
+  background-color: #ff4e50;
+}
+
+.partner-nature::after {
+  background-image: url(../img/icon_nature.png);
+  background-color: #ffa507;
+}
+
+.partner-cats::after {
+  background-image: url(../img/icon_cats.png);
+  background-color: #1cd7ad;
+}
+
+.partner-teleg::after {
+  background-image: url(../img/icon_teleg.png);
+  background-color: #4e73db;
+}
+
+/* Order partner */
+
+.two {
+  order: 2;
+}
+
+.three {
+  order: 1;
+}
+
+.four {
+  order: 3;
+}
+
+/* Button see other partners */
+
+.see-other {
+  display: block;
+  width: 284px;
+  height: 44px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff4e50;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ff4e50;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto 57px;
+}
+
+/* @media 768*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 660px;
+  }
+  .page-header {
+    padding-top: 38px;
+    padding-bottom: 142px;
+  }
+  .background-dreams {
+    height: 700px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .site-navigation {
+    margin: 0 0 0;
+  }
+  .headline {
+    font-size: 52px;
+    width: 503px;
+    margin: 0 auto 34px;
+  }
+  .hadline-descr {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+  .find-partner {
+    width: 226px;
+  }
+  .headline-meet {
+    margin-bottom: 32px;
+  }
+  .meet-partner-item {
+    margin-bottom: 56px;
+  }
+  .meet-partner-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .meet-partner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 490px;
+    margin: 0 auto 38px;
+  }
+  .two,
+  .three,
+  .four {
+    order: 0;
+  }
+  .see-other {
+    width: 197px;
+    margin-bottom: 40px;
+  }
+}
+
+/* @media 1440*/
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 940px;
+  }
+  .meet-partner-item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+  .meet-partner {
+    flex-wrap: nowrap;
+    width: 940px;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+  .see-other {
+    margin-bottom: 72px;
+  }
+}
