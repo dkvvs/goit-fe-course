@@ -319,9 +319,9 @@ html {
   }
 }
 
-/* @media 1440*/
+/* @media 1024*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 940px;
   }
