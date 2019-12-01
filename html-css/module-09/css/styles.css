@@ -26,6 +26,7 @@ html {
 }
 
 .background-dreams {
+  min-width: 320px;
   height: 540px;
   background-color: #1a1915;
   background-image: url(../img/Vector_Smart_Object.png);
@@ -48,7 +49,7 @@ html {
 .site-navigation {
   display: flex;
   justify-content: center;
-  list-style: none;
+  list-style: nonse;
   margin: 0 auto 116px;
 }
 
