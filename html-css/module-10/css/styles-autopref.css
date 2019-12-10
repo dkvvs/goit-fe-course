@@ -1,16 +1,20 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 * {
   padding: 0;
   margin: 0;
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 ::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .link {
@@ -23,8 +27,12 @@ html {
 }
 
 .flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container {
@@ -36,6 +44,19 @@ html {
 
 .background {
   min-height: 1000px;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgb(243, 129, 129, 0.9))
+    ),
+    url(../img/eagle.jpg);
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgb(243, 129, 129, 0.9) 100%
+    ),
+    url(../img/eagle.jpg);
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
@@ -64,7 +85,9 @@ html {
 }
 
 .navigation {
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 100%;
 }
 
@@ -79,6 +102,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
   display: inline-block;
   text-align: center;
@@ -96,6 +121,8 @@ html {
 
 .site-navigation__link:hover::after {
   opacity: 1;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
@@ -166,9 +193,16 @@ html {
 /* Headline h2 */
 
 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title__top {
@@ -240,12 +274,17 @@ html {
 }
 
 .sevices__list {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sevices__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 360px;
   margin-bottom: 100px;
 }
@@ -343,24 +382,39 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fce38a), to(#f38181));
+  background-image: -o-linear-gradient(bottom, #fce38a 0%, #f38181 100%);
   background-image: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
   opacity: 0;
 }
 
 .foto__gradient--hover:hover .team__image {
-  transform: translate(-10px, -10px);
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .foto__gradient--hover:hover:after {
-  transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0 #95e1d3;
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-box-shadow: 10px 10px 0 #95e1d3;
+          box-shadow: 10px 10px 0 #95e1d3;
   opacity: 0.9;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
 .foto__gradient--hover:hover .socials {
   opacity: 1;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
@@ -369,7 +423,9 @@ html {
   width: 227px;
   left: 50%;
   top: 50%;
-  transform: translate(-54%, -54%);
+  -webkit-transform: translate(-54%, -54%);
+      -ms-transform: translate(-54%, -54%);
+          transform: translate(-54%, -54%);
   z-index: 100;
   opacity: 0;
 }
@@ -379,9 +435,15 @@ html {
 }
 
 .socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgb(252, 227, 138);
   width: 56px;
   height: 56px;
@@ -397,6 +459,8 @@ html {
 
 .socials__link--hover:hover {
   background-color: #f38181;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
 
@@ -408,7 +472,9 @@ html {
 
 .footer {
   border-top: 1px solid #e5e5e5;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__content {
@@ -425,6 +491,8 @@ html {
 }
 
 .forma {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -433,6 +501,46 @@ html {
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
   padding-left: 12px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+  color: #cccccc;
+}
+
+::-moz-placeholder {
+  font-size: 15px;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+  color: #cccccc;
+}
+
+:-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+  color: #cccccc;
+}
+
+::-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+  color: #cccccc;
 }
 
 ::placeholder {
@@ -459,8 +567,21 @@ html {
   cursor: pointer;
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .background {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgb(243, 129, 129, 0.9))
+      ),
+      url(../img/eagle@2x.jpg);
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgb(243, 129, 129, 0.9) 100%
+      ),
+      url(../img/eagle@2x.jpg);
     background-image: linear-gradient(
         0deg,
         rgba(252, 227, 138, 0.9) 0%,
