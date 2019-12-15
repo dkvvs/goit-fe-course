@@ -1,0 +1,32 @@
+.more {
+  border-style: solid;
+  border-width: 3px;
+  border-color: $font-color-white;
+  width: 164px;
+  height: 44px;
+  margin: 0 auto;
+}
+  
+.more__learn-more {
+  font-size: 14px;
+  line-height: 38px;
+  color: $font-color-white;
+  font-family: $font-family-stack;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+.forma__subscribe {
+  width: 150px;
+  background-color: #95e1d3;
+  font-size: 14px;
+  line-height: 40px;
+  color: $font-color-white;
+  border: none;
+  font-family: $font-family-stack;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}

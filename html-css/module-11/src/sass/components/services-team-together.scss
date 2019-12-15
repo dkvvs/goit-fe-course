@@ -1,0 +1,28 @@
+.services-content__name,
+.team-member__name {
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-color-name;
+  font-family: $font-family-stack;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.services-content__name {
+  margin-bottom: 16px;
+}
+
+.team-item-descr,
+.services-content__descr {
+  font-size: 15px;
+  line-height: 24px;
+  color: $font-color-descr;
+  font-family: $font-family-descr;
+  font-weight: 400;
+}
+
+.team-item-descr {
+  width: 980px;
+  text-align: center;
+  margin: 0 auto 92px;
+}

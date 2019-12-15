@@ -1,0 +1,13 @@
+.cart-glass {
+  margin-left: 50px;
+  width: 90px;
+}
+  
+.cart-glass__link--hover {
+  fill: $font-color-white;
+
+  &:hover {
+    fill: $hover-color;
+  }
+}
+  

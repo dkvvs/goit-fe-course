@@ -1,0 +1,38 @@
+.socials {
+  position: absolute;
+  width: 227px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-54%, -54%);
+  z-index: 100;
+  opacity: 0;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    @include center-flex('all');
+    background-color: $hover-color;
+    width: 56px;
+    height: 56px;
+    border: none;
+  }
+
+  &__icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    fill: $link-line-color;
+  }
+}
+ 
+.socials__link--hover:hover {
+  background-color: $link-line-color;
+  transition: background-color 0.2s linear;
+
+  & .socials__icon {
+    fill: $font-color-white;
+  }
+}
+ 

@@ -1,0 +1,39 @@
+.navigation {
+  align-items: baseline;
+  width: 100%;
+}
+  
+.site-navigation {
+  width: 490px;
+}
+  
+.site-navigation__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-color-white;
+  font-family: $font-family-stack;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+  display: inline-block;
+  text-align: center;
+
+  &::after {
+    @include psevdo ($display: block);
+    width: 50px;
+    height: 3px;
+    background-color: $hover-color;
+    margin: 10px auto 0;
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+  }
+
+  &--hover:hover,
+  &--focus:focus {
+    color: $hover-color;
+  }
+}
